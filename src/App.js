@@ -18,7 +18,7 @@ class App extends React.Component {
   render() {
     return <div className="App">
       <Provider>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <div className="container-fluid">
             <Header></Header>
           </div>
